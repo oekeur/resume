@@ -2,6 +2,14 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import data from "../data/resume.json";
 import NavBar from "../components/nav/navbar";
+import {
+  Box,
+  Container,
+  Content,
+  Heading,
+  Media,
+  Tag,
+} from "react-bulma-components";
 
 export default function Home() {
   return (
