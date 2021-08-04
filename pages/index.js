@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import data from "../data/resume.json";
+import NavBar from "../components/nav/navbar";
 
 export default function Home() {
   return (
@@ -12,9 +12,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>About me: Oscar Keur</h1>
-      </main>
+      <NavBar></NavBar>
+
+      <main className={styles.main}></main>
     </div>
   );
 }
