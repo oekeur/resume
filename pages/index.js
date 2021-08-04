@@ -10,6 +10,8 @@ import {
   Media,
   Tag,
 } from "react-bulma-components";
+import profilePic from "../public/photo.jpg";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -20,9 +22,41 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <NavBar></NavBar>
+      <NavBar />
 
-      <main className={styles.main}></main>
+      <Container className={styles.container}>
+        <main className={styles.main}>
+          <Box>
+            <Media>
+              <Media.Item align="left">
+                <Image
+                  src={profilePic}
+                  alt="Picture of the author"
+                  width={200}
+                  height={264}
+                  layout="intrinsic"
+                  placeholder="blur"
+                />
+              </Media.Item>
+              <Media.Item>
+                <Content>
+                  <Heading tooltip="he / him">Intro: Oscar Keur</Heading>
+                  <Tag>he / him</Tag>
+                  <Tag.Group>
+                    {data.basics.competences.map((element, index) => {
+                      return (
+                        <Tag key={index} size="medium">
+                          {element}
+                        </Tag>
+                      );
+                    })}
+                  </Tag.Group>
+                </Content>
+              </Media.Item>
+            </Media>
+          </Box>
+        </main>
+      </Container>
     </div>
   );
 }
