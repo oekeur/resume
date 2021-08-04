@@ -147,18 +147,22 @@
   "languages": [
     {
       "language": "Dutch",
+      "countryCode": "nl",
       "fluency": "Native"
     },
     {
       "language": "English",
+      "countryCode": "gb",
       "fluency": "Fluent"
     },
     {
       "language": "Spanish",
+      "countryCode": "es",
       "fluency": "Proficient"
     },
     {
       "language": "French",
+      "countryCode": "fr",
       "fluency": "Basic"
     }
   ],

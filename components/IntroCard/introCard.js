@@ -43,7 +43,7 @@ const IntroCard = (props) => {
               Amsterdam, Netherlands
             </Level.Side>
           </Level>
-          <TagGroup data={data.basics.competences}></TagGroup>
+          <TagGroup data={data.basics.competences} />
           <Message>
             <Message.Body>
               Fluff marshmellow quickly, then mix with worcestershire sauce and

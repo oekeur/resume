@@ -1,10 +1,15 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import layout from "../styles/layout.module.scss";
 import NavBar from "../components/NavBar/NavBar";
-import { Container } from "react-bulma-components";
+import { Box, Container, Heading } from "react-bulma-components";
 import IntroCard from "../components/IntroCard/introCard";
+import TagGroup from "../components/TagGroup/TagGroup";
+import { useAppContext } from "../context/state";
 
 export default function Home() {
+  const data = useAppContext();
+  console.log(data);
   return (
     <div className={styles.container}>
       <Head>
@@ -18,7 +23,27 @@ export default function Home() {
       <Container className={styles.container}>
         <main className={styles.main}>
           <IntroCard />
-          <hr className={styles.dashed} />
+          <Box className={layout.fullWidth}>
+            <Heading>Languages</Heading>
+
+            {data.languages.map((elem, index) => {
+              return (
+                <div key={index}>
+                  <span
+                    className={`flag-icon flag-icon-${elem.countryCode} flag-icon-squared`}
+                  />
+                  {elem.language} : {elem.fluency}
+                </div>
+              );
+            })}
+          </Box>
+          <Box>
+            <Heading>Interests</Heading>
+            <Heading subtitle={true}>Personal</Heading>
+            <TagGroup data={data.interests.personal} />
+            <Heading subtitle={true}>Professional</Heading>
+            <TagGroup data={data.interests.professional} />
+          </Box>
         </main>
       </Container>
     </div>

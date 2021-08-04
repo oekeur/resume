@@ -1,6 +1,7 @@
 @import "~bulma/css/bulma.min.css";
 @import "~bulma-pro/css/bulma.css";
 @import "~@creativebulma/bulma-badge/src/docs/static/css/bulma-badge.css";
+@import "../node_modules/flag-icon-css/css/flag-icon.css";
 
 html,
 body {
