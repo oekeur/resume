@@ -1,0 +1,190 @@
+{
+  "basics": {
+    "name": "Oscar Keur",
+    "label": "Programmer",
+    "picture": "",
+    "website": "http://oscarkeur.dev",
+    "summary": "",
+    "pronouns": "he/him",
+    "competences": ["independent", "flexible", "user centric", "venturous", "dependable", "technical"],
+    "location": {
+      "city": "Amsterdam",
+      "countryCode": "NL"
+    },
+    "profiles": {
+      "LinkedIn": "https://www.linkedin.com/in/oscarkeur/",
+      "GitHub": "https://github.com/oekeur",
+      "Instagram": "https://www.instagram.com/oekeu/"
+    }
+  },
+  "activities": {
+    "work": [
+      {
+        "company": "Greenpeace Netherlands",
+        "position": "Senior Developer",
+        "website": "http://www.greenpeace.org/nl",
+        "date": "2018-present",
+        "summary": "At Greenpeace Netherlands, I am responsible for the website, both in technical terms, as on a strategic level. My job consists of identifying bottlenecks and areas of improvement, coming up with ideas to solve them, test those, and finally implement and support them.",
+        "achievements": ["Implementing new donation and lead generation forms",
+          "Developing tools for e-activism",
+          "Identifying UI/UX improvements",
+          "Overseeing web presence during CRM migration",
+          "Implementing new style guide following identity project",
+          "Increasing style guide use, leading to a more coherent image",
+          "Improving collaboration through coherent request management"
+        ]
+      },
+      {
+        "company": "WikkertWebdesign",
+        "position": "Founder / Developer",
+        "website": "",
+        "date": "2015-present",
+        "summary": "For the past 6 years, I developed several products within the context of my own company. These products range from websites to applications for revenue calculation, ticket sales, and subscription management. Amongst others I developed products for: The Dutch Review of Boos, DRIFT and Morebeer.",
+        "highlights": [""]
+      }
+    ],
+    "additional": [
+      {
+        "name": "Hospitality Industry",
+        "position": "Manager / bartender",
+        "date": "2009-2019"
+      },
+      {
+        "position": "Chauffeur",
+        "name": "D&B Mobility Group",
+        "date": "2013-2015"
+      },
+      {
+        "position": "Founder, event technician",
+        "name": "Exquisite Events",
+        "date": "2007-2015"
+      },
+      {
+        "position": "Lighting Technician",
+        "name": "Poppodium Patronaat",
+        "date": "2011-2012"
+      },
+      {
+        "position": "Web development",
+        "name": "Foundation Mail it to Malawi",
+        "date": "2012-2013"
+      }
+    ],
+    "extracurricular": [
+      {
+        "position": "Member of works council",
+        "name": "Greenpeace Netherlands",
+        "date":"2019-present"
+      },
+      {
+        "position": "GDPR Officer",
+        "name": "Greenpeace Netherlands",
+        "date":"2021-present"
+      },
+      {
+        "position": "President",
+        "name": "Foundation Wolpop",
+        "date":"2015-present"
+      },
+      {
+        "position": "Polling station president ",
+        "name": "Dutch Elections",
+        "date":"2014-present"
+      },
+      {
+        "position": "Treasurer",
+        "name": "Society Wolbodo",
+        "date":"2013-2014  2017-2018"
+      },
+      {
+        "position": "Lighting Technician",
+        "name": "Theatre group High school",
+        "date":"2008-2011"
+      }
+    ]
+  },
+  "education": {
+    "institutional" :[
+    {
+      "institution": "Technical University Delft",
+      "area": "Technical Policy Analysis and Management",
+      "studyType": "Bachelor",
+      "date": "2017",
+      "courses": ["Minor: Software Engineering", "Focus on: Transport & Logistics"]
+    }
+  ],
+  "training": [
+    {
+      "name": "Future Leadership Programme",
+      "date": "internal, 2020-2021"
+    },
+    {
+      "name": "SymfonyCon Amsterdam pre-conference workshop days",
+      "date": "2019"
+    },
+    {
+      "name": "Google Analytics Masterclass",
+      "date": "internal, 2019"
+    },
+    {
+      "name": "Campaign Essentials",
+      "date": "internal, 2019"
+    },
+    {
+      "name": "Emergency Response Officer",
+      "date": "yearly since 2016"
+    }
+
+  ]
+  },
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "",
+      "keywords": ["HTML", "CSS", "PHP", "Javascript","Python"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Dutch",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Proficient"
+    },
+    {
+      "language": "French",
+      "fluency": "Basic"
+    }
+  ],
+  "interests": {
+    "personal": [
+        "Cooking",
+        "Fermentation",
+        "UI/UX",
+        "Hiking",
+        "Design"
+    ],
+    "professional": [
+      "WordPress",
+      "Git",
+      "React",
+      "Webpack",
+      "Codeception",
+      "Smartsheet",
+      "Docker",
+      "CircleCI",
+      "Puppeteer",
+      "SonarCloud",
+      "Jira",
+      "Jest",
+      "NewRelic",
+      "Sentry",
+      "Docker Compose"]
+  }
+}
