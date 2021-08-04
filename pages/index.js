@@ -1,17 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import data from "../data/resume.json";
-import NavBar from "../components/nav/navbar";
-import {
-  Box,
-  Container,
-  Content,
-  Heading,
-  Media,
-  Tag,
-} from "react-bulma-components";
-import profilePic from "../public/photo.jpg";
-import Image from "next/image";
+import NavBar from "../components/NavBar/NavBar";
+import { Container } from "react-bulma-components";
+import IntroCard from "../components/IntroCard/introCard";
 
 export default function Home() {
   return (
@@ -26,35 +17,8 @@ export default function Home() {
 
       <Container className={styles.container}>
         <main className={styles.main}>
-          <Box>
-            <Media>
-              <Media.Item align="left">
-                <Image
-                  src={profilePic}
-                  alt="Picture of the author"
-                  width={200}
-                  height={264}
-                  layout="intrinsic"
-                  placeholder="blur"
-                />
-              </Media.Item>
-              <Media.Item>
-                <Content>
-                  <Heading tooltip="he / him">Intro: Oscar Keur</Heading>
-                  <Tag>he / him</Tag>
-                  <Tag.Group>
-                    {data.basics.competences.map((element, index) => {
-                      return (
-                        <Tag key={index} size="medium">
-                          {element}
-                        </Tag>
-                      );
-                    })}
-                  </Tag.Group>
-                </Content>
-              </Media.Item>
-            </Media>
-          </Box>
+          <IntroCard />
+          <hr className={styles.dashed} />
         </main>
       </Container>
     </div>
