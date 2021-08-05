@@ -6,6 +6,7 @@ import { Box, Container, Heading } from "react-bulma-components";
 import IntroCard from "../components/IntroCard/introCard";
 import TagGroup from "../components/TagGroup/TagGroup";
 import { useAppContext } from "../context/state";
+import Languages from "../components/Languages/Languages";
 
 export default function Home() {
   const data = useAppContext();
@@ -24,19 +25,7 @@ export default function Home() {
         <main className={styles.main}>
           <IntroCard />
           <Box className={layout.fullWidth}>
-            <Heading>Languages</Heading>
-
-            {data.languages.map((elem, index) => {
-              return (
-                <div key={index}>
-                  <span
-                    className={`flag-icon flag-icon-${elem.countryCode} flag-icon-squared`}
-                  />
-                  {elem.language} : {elem.fluency}
-                </div>
-              );
-            })}
-          </Box>
+          <Languages data={data.languages} />
           <Box>
             <Heading>Interests</Heading>
             <Heading subtitle={true}>Personal</Heading>
