@@ -11,7 +11,6 @@ import Experience from "../components/Experience/Experience";
 
 export default function Home() {
   const data = useAppContext();
-  console.log(data);
   return (
     <div className={styles.container}>
       <Head>
@@ -28,10 +27,14 @@ export default function Home() {
           <Experience data={data.activities} />
           <Languages data={data.languages} />
           <Box>
-            <Heading>Interests</Heading>
-            <Heading subtitle={true}>Personal</Heading>
+            <Heading renderAs={"h2"}>Interests</Heading>
+            <Heading subtitle renderAs={"h3"}>
+              Personal
+            </Heading>
             <TagGroup data={data.interests.personal} />
-            <Heading subtitle={true}>Professional</Heading>
+            <Heading subtitle renderAs={"h3"}>
+              Professional
+            </Heading>
             <TagGroup data={data.interests.professional} />
           </Box>
         </main>
