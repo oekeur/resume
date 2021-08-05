@@ -12,13 +12,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons/faMapMarkerAlt";
 import { useAppContext } from "../../context/state";
 import TagGroup from "../TagGroup/TagGroup";
+import styles from "./introCard.module.scss";
 
 const IntroCard = (props) => {
   const data = useAppContext();
   return (
     <Box>
       <Media>
-        <Media.Item align="left">
+        <Media.Item align="left" className={styles.imgRelative}>
           <Image
             src={profilePic}
             alt="Picture of the author"
