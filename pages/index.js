@@ -7,6 +7,7 @@ import IntroCard from "../components/IntroCard/introCard";
 import TagGroup from "../components/TagGroup/TagGroup";
 import { useAppContext } from "../context/state";
 import Languages from "../components/Languages/Languages";
+import Experience from "../components/Experience/Experience";
 
 export default function Home() {
   const data = useAppContext();
@@ -24,7 +25,7 @@ export default function Home() {
       <Container className={styles.container}>
         <main className={styles.main}>
           <IntroCard />
-          <Box className={layout.fullWidth}>
+          <Experience data={data.activities} />
           <Languages data={data.languages} />
           <Box>
             <Heading>Interests</Heading>
