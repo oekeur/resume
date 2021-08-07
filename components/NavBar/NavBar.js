@@ -3,10 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons/faInstagram";
+import styles from "./navbar.module.scss";
 
 export default function NavBar() {
   return (
-    <Navbar fixed="top">
+    <Navbar fixed="top" className={styles.boxShadow}>
       <Heading size={1}>About me</Heading>
       <Navbar.Container align="right">
         <Button as="a" href="https://github.com/oekeur">
