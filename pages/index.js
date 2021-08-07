@@ -28,14 +28,7 @@ export default function Home() {
           <Experience data={data.activities} />
           <Languages data={data.languages} />
           <Box>
-            <Heading renderAs={"h2"}>Interests</Heading>
-            <Heading subtitle renderAs={"h3"}>
-              Personal
-            </Heading>
-            <TagGroup data={data.interests.personal} />
-            <Heading subtitle renderAs={"h3"}>
-              Professional
-            </Heading>
+            <Heading renderAs={"h2"}>Skills</Heading>
             <TagGroup data={data.interests.professional} />
           </Box>
           <Box className={layout.fullwidth}>

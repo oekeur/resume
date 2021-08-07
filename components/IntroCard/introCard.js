@@ -52,6 +52,10 @@ const IntroCard = (props) => {
               sourness of peanut butter fritters mixd with black pepper.
             </Message.Body>
           </Message>
+          <Heading subtitle renderAs={"h3"}>
+            Personal interests
+          </Heading>
+          <TagGroup data={data.interests.personal} />
         </Media.Item>
       </Media>
     </Box>
