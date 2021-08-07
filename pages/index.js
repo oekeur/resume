@@ -25,15 +25,15 @@ export default function Home() {
       <Container className={styles.container}>
         <main className={styles.main}>
           <IntroCard />
-          <Experience data={data.activities} />
-          <Languages data={data.languages} />
           <Box>
             <Heading renderAs={"h2"}>Skills</Heading>
             <TagGroup data={data.interests.professional} />
           </Box>
+          <Experience data={data.activities} />
           <Box className={layout.fullwidth}>
             <Training data={data.education.training} />
           </Box>
+          <Languages data={data.languages} />
         </main>
       </Container>
     </div>
