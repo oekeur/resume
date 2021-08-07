@@ -4,11 +4,11 @@ import stylesExperience from "./experience.module.scss";
 import stylesUtils from "../../styles/utils.module.scss";
 
 const Professional = ({ work }) => {
-  return work.map((elem) => {
+  return work.map((elem, index) => {
     const hasHighLight = elem.highlights !== undefined;
     const hasSummary = elem.summary !== undefined;
     return (
-      <div>
+      <div key={index}>
         <Level>
           <Level.Item className={stylesExperience.mrAuto}>
             {elem.position}

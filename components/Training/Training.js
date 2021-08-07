@@ -3,10 +3,9 @@ import styles from "../Experience/experience.module.scss";
 import layout from "../../styles/layout.module.scss";
 
 const List = ({ data }) => {
-  console.log(data);
-  return data.map((elem) => {
+  return data.map((elem, index) => {
     return (
-      <Level mb="0">
+      <Level mb="0" key={index}>
         <Level.Item className={styles.mrAuto}>{elem.name}</Level.Item>
         <Level.Item className={styles.mlAuto} italic>
           {elem.date}
