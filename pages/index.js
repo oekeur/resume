@@ -8,6 +8,7 @@ import TagGroup from "../components/TagGroup/TagGroup";
 import { useAppContext } from "../context/state";
 import Languages from "../components/Languages/Languages";
 import Experience from "../components/Experience/Experience";
+import Training from "../components/Training/Training";
 
 export default function Home() {
   const data = useAppContext();
@@ -36,6 +37,9 @@ export default function Home() {
               Professional
             </Heading>
             <TagGroup data={data.interests.professional} />
+          </Box>
+          <Box className={layout.fullwidth}>
+            <Training data={data.education.training} />
           </Box>
         </main>
       </Container>
