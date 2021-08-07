@@ -1,6 +1,6 @@
-import { Heading, Level } from "react-bulma-components";
+import { Heading, Level, Box } from "react-bulma-components";
 import styles from "../Experience/experience.module.scss";
-import { Box } from "react-bulma-components";
+import layout from "../../styles/layout.module.scss";
 
 const List = ({ data }) => {
   console.log(data);
@@ -18,10 +18,10 @@ const List = ({ data }) => {
 
 const Training = ({ data }) => {
   return (
-    <div>
+    <Box className={layout.fullwidth}>
       <Heading renderAs={"h2"}>Training</Heading>
       <List data={data} />
-    </div>
+    </Box>
   );
 };
 

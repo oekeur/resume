@@ -30,9 +30,8 @@ export default function Home() {
             <TagGroup data={data.interests.professional} />
           </Box>
           <Experience data={data.activities} />
-          <Box className={layout.fullwidth}>
-            <Training data={data.education.training} />
-          </Box>
+
+          <Training data={data.education.training} />
           <Languages data={data.languages} />
         </main>
       </Container>
