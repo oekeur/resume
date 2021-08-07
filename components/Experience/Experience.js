@@ -1,11 +1,9 @@
-import React, { useState } from "react";
 import { Box, Heading, Level } from "react-bulma-components";
 import layout from "../../styles/layout.module.scss";
 import styles from "./experience.module.scss";
 
 const Professional = ({ work }) => {
   return work.map((elem) => {
-    // console.log(elem);
     const hasHighLight = elem.highlights !== undefined;
     const hasSummary = elem.summary !== undefined;
     return (
@@ -18,7 +16,8 @@ const Professional = ({ work }) => {
           </Level.Item>
         </Level>
         {hasSummary ? <p>{elem.summary}</p> : ""}
-        {hasHighLight ? <Results highlights={elem.highlights}></Results> : ""}
+        {hasHighLight ? <Results highlights={elem.highlights} /> : ""}
+        {hasSummary ? <hr /> : ""}
       </div>
     );
   });
@@ -30,7 +29,7 @@ const Results = ({ highlights }) => {
       <Heading subtitle renderAs={"h3"} mb={"1"} mt={"3"}>
         Key results:
       </Heading>
-      <ul mt={"0"} className={styles.resetList}>
+      <ul className={styles.resetList}>
         {highlights.map((highlight, index) => {
           return <li key={index}>{highlight}</li>;
         })}
@@ -40,7 +39,6 @@ const Results = ({ highlights }) => {
 };
 
 const Experience = ({ data }) => {
-  console.log(data);
   return (
     <Box className={layout.fullwidth}>
       <Heading renderAs={"h2"}>Experience</Heading>
@@ -52,6 +50,7 @@ const Experience = ({ data }) => {
         Extracurricular
       </Heading>
       <Professional work={data.extracurricular} />
+      <hr />
       <Heading subtitle renderAs={"h3"} mb="0" mt="4">
         Additional
       </Heading>
