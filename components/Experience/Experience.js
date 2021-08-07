@@ -13,7 +13,7 @@ const Professional = ({ work }) => {
           <Level.Item className={stylesExperience.mrAuto}>
             {elem.position}
           </Level.Item>
-          <Level.Item>{hasSummary ? elem.company : elem.name}</Level.Item>
+          <Level.Item className={stylesExperience.levelMiddle}>{hasSummary ? elem.company : elem.name}</Level.Item>
           <Level.Item className={stylesExperience.mlAuto} italic>
             {elem.date}
           </Level.Item>
