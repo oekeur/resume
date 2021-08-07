@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p 8000",
+    "run": "next build && next start -p 8000",
+    "export": "next build && next export",
+    "lint": "next lint"
   },
   "dependencies": {
     "@creativebulma/bulma-badge": "^1.0.1",
@@ -26,5 +29,9 @@
     "react-dom": "17.0.2",
     "sass": "^1.37.5",
     "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^11.0.1"
   }
 }
