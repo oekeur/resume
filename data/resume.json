@@ -112,7 +112,7 @@
       "courses": ["Minor: Software Engineering", "Focus on: Transport & Logistics"]
     }
   ],
-  "training": [
+    "training": [
     {
       "name": "Future Leadership Programme",
       "date": "internal, 2020-2021"
@@ -147,22 +147,22 @@
     {
       "language": "Dutch",
       "countryCode": "nl",
-      "fluency": "Native"
+      "fluency": "Native (C2)"
     },
     {
       "language": "English",
       "countryCode": "gb",
-      "fluency": "Fluent"
+      "fluency": "Fluent (C1)"
     },
     {
       "language": "Spanish",
       "countryCode": "es",
-      "fluency": "Proficient"
+      "fluency": "Proficient (B2)"
     },
     {
       "language": "French",
       "countryCode": "fr",
-      "fluency": "Basic"
+      "fluency": "Basic (A1)"
     }
   ],
   "interests": {
