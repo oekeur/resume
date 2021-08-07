@@ -1,6 +1,6 @@
 import { Box, Heading, Level } from "react-bulma-components";
-import layout from "../../styles/layout.module.scss";
-import styles from "./experience.module.scss";
+import stylesLayout from "../../styles/layout.module.scss";
+import stylesExperience from "./experience.module.scss";
 import stylesUtils from "../../styles/utils.module.scss";
 
 const Professional = ({ work }) => {
@@ -10,9 +10,11 @@ const Professional = ({ work }) => {
     return (
       <div>
         <Level>
-          <Level.Item className={styles.mrAuto}>{elem.position}</Level.Item>
+          <Level.Item className={stylesExperience.mrAuto}>
+            {elem.position}
+          </Level.Item>
           <Level.Item>{hasSummary ? elem.company : elem.name}</Level.Item>
-          <Level.Item className={styles.mlAuto} italic>
+          <Level.Item className={stylesExperience.mlAuto} italic>
             {elem.date}
           </Level.Item>
         </Level>
@@ -41,7 +43,7 @@ const Results = ({ highlights }) => {
 
 const Experience = ({ data }) => {
   return (
-    <Box className={layout.fullwidth}>
+    <Box className={stylesLayout.fullwidth}>
       <Heading renderAs={"h2"}>Experience</Heading>
       <Heading subtitle renderAs={"h3"}>
         Professional
