@@ -1,6 +1,7 @@
 import { Box, Heading, Level } from "react-bulma-components";
 import layout from "../../styles/layout.module.scss";
 import styles from "./experience.module.scss";
+import stylesUtils from "../../styles/utils.module.scss";
 
 const Professional = ({ work }) => {
   return work.map((elem) => {
@@ -29,7 +30,7 @@ const Results = ({ highlights }) => {
       <Heading subtitle renderAs={"h3"} mb={"1"} mt={"3"}>
         Key results:
       </Heading>
-      <ul className={styles.resetList}>
+      <ul className={stylesUtils.resetList}>
         {highlights.map((highlight, index) => {
           return <li key={index}>{highlight}</li>;
         })}
