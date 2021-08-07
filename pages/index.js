@@ -9,6 +9,7 @@ import { useAppContext } from "../context/state";
 import Languages from "../components/Languages/Languages";
 import Experience from "../components/Experience/Experience";
 import Training from "../components/Training/Training";
+import Education from "../components/Education/Education";
 
 export default function Home() {
   const data = useAppContext();
@@ -31,6 +32,7 @@ export default function Home() {
           </Box>
           <Experience data={data.activities} />
 
+          <Education data={data.education.institutional} />
           <Training data={data.education.training} />
           <Languages data={data.languages} />
         </main>
