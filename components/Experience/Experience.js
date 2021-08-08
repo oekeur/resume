@@ -1,6 +1,5 @@
 import { Box, Heading, Level } from "react-bulma-components";
 import stylesLayout from "../../styles/layout.module.scss";
-import stylesExperience from "./experience.module.scss";
 import stylesUtils from "../../styles/utils.module.scss";
 
 const Professional = ({ work }) => {
@@ -9,12 +8,12 @@ const Professional = ({ work }) => {
     const hasSummary = elem.summary !== undefined;
     return (
       <div key={index}>
-        <Level>
-          <Level.Item className={stylesExperience.mrAuto}>
+        <Level className={stylesLayout.justifyCenter}>
+          <Level.Item className={stylesLayout.mrAuto} >
             {elem.position}
           </Level.Item>
-          <Level.Item className={stylesExperience.levelMiddle}>{hasSummary ? elem.company : elem.name}</Level.Item>
-          <Level.Item className={stylesExperience.mlAuto} italic>
+          <Level.Item className={stylesLayout.flexOne}>{hasSummary ? elem.company : elem.name}</Level.Item>
+          <Level.Item className={stylesLayout.mlAuto} italic>
             {elem.date}
           </Level.Item>
         </Level>

@@ -8,3 +8,23 @@
 .fullwidth{
     width: 100%;
 }
+
+.mlAuto {
+  margin-left: auto;
+  justify-content: right;
+  flex: 1;
+}
+
+.mrAuto {
+  margin-right: auto;
+  justify-content: left;
+  flex: 1;
+}
+
+.flexOne {
+  flex: 1;
+}
+
+.justifyCenter {
+  justify-content: center;
+}

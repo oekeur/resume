@@ -6,8 +6,8 @@ const List = ({ data }) => {
   return data.map((elem, index) => {
     return (
       <Level mb="0" key={index}>
-        <Level.Item className={styles.mrAuto}>{elem.name}</Level.Item>
-        <Level.Item className={styles.mlAuto} italic>
+        <Level.Item className={layout.mrAuto}>{elem.name}</Level.Item>
+        <Level.Item className={layout.mlAuto} italic>
           {elem.date}
         </Level.Item>
       </Level>

@@ -9,10 +9,10 @@ const Education = ({ data }) => {
     <Box className={layout.fullwidth}>
       <Heading renderAs={"h2"}>Education</Heading>
       <Level mb="0">
-        <Level.Item className={styles.mrAuto}>
+        <Level.Item className={layout.mrAuto}>
           {studyType} {area}
         </Level.Item>
-        <Level.Item className={styles.mlAuto}>
+        <Level.Item className={layout.mlAuto}>
           {institution}
           <Element renderAs={"span"} italic>
             ({date})

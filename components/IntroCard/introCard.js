@@ -13,6 +13,7 @@ import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons/faMapMarkerAlt
 import { useAppContext } from "../../context/state";
 import TagGroup from "../TagGroup/TagGroup";
 import styles from "./introCard.module.scss";
+import stylesLayout from "../../styles/layout.module.scss";
 
 const IntroCard = (props) => {
   const data = useAppContext();
@@ -34,10 +35,10 @@ const IntroCard = (props) => {
         </Media.Item>
         <Media.Item>
           <Level>
-            <Level.Side align="left">
+            <Level.Side className={stylesLayout.mrAuto}>
               <Heading>Oscar Keur</Heading>
             </Level.Side>
-            <Level.Side align="right">
+            <Level.Side className={stylesLayout.mlAuto}>
               <Icon m={1}>
                 <FontAwesomeIcon icon={faMapMarkerAlt} />
               </Icon>
