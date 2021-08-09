@@ -31,31 +31,27 @@ export default function Home() {
           <Box className={layout.fullwidth}>
             <Heading renderAs={"h2"}>Skills</Heading>
             <Heading renderAs={"h3"}>Technologies</Heading>
-            <ul className={stylesUtils.resetList}>
               {data.skills.technologies.map((skill, index)=> {
                 return (
-                  <li key={index}>
-                    {skill.name}
+                  <div key={index}>
                     <span style={{ width: 30, height: 30, display:"inline-block" }}>
                       <CircularProgressbar value={skill.level} text="" strokeWidth={14}/>
-                    </span>
+                    </span>{" "}
+                    {skill.name}
                 </div>)
-                </li>)
               })}
-            </ul>
             <Heading renderAs={"h3"}>Tools&Platforms</Heading>
-            <ul className={stylesUtils.resetList}>
+            <div className={styles.parent}>
               {data.skills["tools & platforms"].map((skill, index)=> {
                 return (
-                  <li key={index}>
-                    {skill.name}
+                  <div key={index}>
                     <span style={{ width: 30, height: 30, display:"inline-block" }}>
                       <CircularProgressbar value={skill.level} text="" strokeWidth={14} />
-                    </span>
+                    </span> {" "}
+                    {skill.name}
                   </div>)
-                  </li>)
               })}
-            </ul>
+            </div>
 
           </Box>
           <Experience data={data.activities} />

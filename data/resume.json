@@ -150,11 +150,11 @@
         "level": 90
       },
       {
-        "name": "HTML5",
-        "level": 90
+        "name": "Javascript",
+        "level": 80
       },
       {
-        "name": "Javascript",
+        "name": "HTML5",
         "level": 75
       },
       {
@@ -163,7 +163,7 @@
       },
       {
         "name": "Python",
-        "level": 25
+        "level": 20
       }
     ],
     "tools & platforms": [
@@ -173,14 +173,14 @@
       },
       {
         "name": "Git",
-        "level": 90
-      },
-      {
-        "name": "React",
-        "level": 75
+        "level": 85
       },
       {
         "name": "Google Marketing Platform",
+        "level": 80
+      },
+      {
+        "name": "React",
         "level": 75
       },
       {
