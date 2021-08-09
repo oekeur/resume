@@ -20,7 +20,7 @@ const IntroCard = (props) => {
   return (
     <Box>
       <Media>
-        <Media.Item align="left" className={styles.imgRelative}>
+        <Media.Item align="left" className={styles.posRelative}>
           <Image
             src={profilePic}
             alt="Picture of the author"
@@ -38,19 +38,20 @@ const IntroCard = (props) => {
             <Level.Side className={stylesLayout.mrAuto}>
               <Heading>Oscar Keur</Heading>
             </Level.Side>
-            <Level.Side className={stylesLayout.mlAuto}>
+            <Level.Side className={stylesLayout.mlAuto +" "+styles.posRelative}>
               <Icon m={1}>
                 <FontAwesomeIcon icon={faMapMarkerAlt} />
               </Icon>
               Amsterdam, Netherlands
+              <span title="remote" className={`badge is-dark ` + styles.badgeReposition}>
+                + Remote
+              </span>
             </Level.Side>
           </Level>
           <TagGroup data={data.basics.competences} />
           <Message>
             <Message.Body>
-              Fluff marshmellow quickly, then mix with worcestershire sauce and
-              serve regularly roasted in cooker. Everyone just loves the
-              sourness of peanut butter fritters mixd with black pepper.
+              {data.basics.summary}
             </Message.Body>
           </Message>
           <Heading subtitle renderAs={"h3"}>

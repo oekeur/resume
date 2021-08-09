@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { Box, Heading, Level } from "react-bulma-components";
 import stylesLayout from "../../styles/layout.module.scss";
 import stylesUtils from "../../styles/utils.module.scss";
@@ -7,9 +8,9 @@ const Professional = ({ work }) => {
     const hasHighLight = elem.highlights !== undefined;
     const hasSummary = elem.summary !== undefined;
     return (
-      <div key={index}>
-        <Level className={stylesLayout.justifyCenter}>
-          <Level.Item className={stylesLayout.mrAuto} >
+      <Fragment key={index}>
+        <Level className={stylesLayout.justifyCenter +" "+  stylesUtils.noMb}>
+          <Level.Item className={stylesLayout.mrAuto} textWeight={"semibold"} >
             {elem.position}
           </Level.Item>
           <Level.Item className={stylesLayout.flexOne}>{hasSummary ? elem.company : elem.name}</Level.Item>
@@ -20,14 +21,14 @@ const Professional = ({ work }) => {
         {hasSummary ? <p>{elem.summary}</p> : ""}
         {hasHighLight ? <Results highlights={elem.highlights} /> : ""}
         {hasSummary ? <hr /> : ""}
-      </div>
+      </Fragment>
     );
   });
 };
 
 const Results = ({ highlights }) => {
   return (
-    <div>
+    <Fragment>
       <Heading subtitle renderAs={"h3"} mb={"1"} mt={"3"}>
         Key results:
       </Heading>
@@ -36,7 +37,7 @@ const Results = ({ highlights }) => {
           return <li key={index}>{highlight}</li>;
         })}
       </ul>
-    </div>
+    </Fragment>
   );
 };
 

@@ -4,7 +4,7 @@
     "label": "Programmer",
     "picture": "",
     "website": "http://oscarkeur.dev",
-    "summary": "",
+    "summary": "Experienced Developer with a history of entrepreneurship. Prefers working in the non-profit industry. Skilled in Web development, Project Management, big picture thinking and digital marketing analytics. Strong independent professional with a Bsc focused on Technical policy management from TU Delft, minoring in Software engineering. ",
     "pronouns": "he/him",
     "competences": ["independent", "flexible", "user centric", "venturous", "dependable", "technical"],
     "location": {
@@ -46,7 +46,7 @@
         "position": "Founder / Developer",
         "website": "",
         "date": "2015-present",
-        "summary": "For the past 6 years, I developed several products within the context of my own company. These products range from websites to applications for revenue calculation, ticket sales, and subscription management. Amongst others I developed products for: The Dutch Review of Boos, DRIFT and Morebeer."
+        "summary": "For the past 6 years, I developed several products within the context of my own company. These products range from websites to applications for revenue calculation, ticket sales, and subscription management. Amongst others I developed products for: The Dutch Review of Books, DRIFT and Morebeer."
       }
     ],
     "additional": [
@@ -169,11 +169,23 @@
     "methods": [
       {
         "name": "Big picture thinking",
-        "level": 90
+        "level": 85
       },
       {
-        "name": "Data analysis",
-        "level": 90
+        "name": "Grasping data sets",
+        "level": 80
+      },
+      {
+        "name": "Problem analysis",
+        "level": 80
+      },
+      {
+        "name": "Process optimization",
+        "level": 70
+      },
+      {
+        "name": "Creative thinking",
+        "level": 60
       }
     ],
     "tools & platforms": [

@@ -1,11 +1,11 @@
 import { Heading, Level, Box } from "react-bulma-components";
-import styles from "../Experience/experience.module.scss";
 import layout from "../../styles/layout.module.scss";
+import stylesUtils from "../../styles/utils.module.scss"
 
 const List = ({ data }) => {
   return data.map((elem, index) => {
     return (
-      <Level mb="0" key={index}>
+      <Level className={stylesUtils.noMb} key={index}>
         <Level.Item className={layout.mrAuto}>{elem.name}</Level.Item>
         <Level.Item className={layout.mlAuto} italic>
           {elem.date}

@@ -30,19 +30,19 @@ export default function Home() {
             <Heading renderAs={"h2"}>Skills</Heading>
             <Columns>
               <Columns.Column>
-                <Heading renderAs={"h3"}>Technologies</Heading>
+                <Heading subtitle renderAs={"h3"}>Technologies</Heading>
                 <SkillsBadge data={data.skills.technologies} />
               </Columns.Column>
 
               <Columns.Column>
-                <Heading renderAs={"h3"}>Methods</Heading>
+                <Heading subtitle renderAs={"h3"}>Techniques</Heading>
                 <SkillsBadge data={data.skills.methods} />
               </Columns.Column>
             </Columns>
 
 
 
-            <Heading renderAs={"h3"}>Tools & Platforms</Heading>
+            <Heading subtitle renderAs={"h3"}>Tools & Platforms</Heading>
             <Columns>
               <Columns.Column>
                 <SkillsBadge data={data.skills["tools & platforms"].slice(0, Math.ceil(data.skills["tools & platforms"].length / 2) )} />
