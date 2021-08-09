@@ -4,14 +4,12 @@ import layout from "../styles/layout.module.scss";
 import NavBar from "../components/NavBar/NavBar";
 import { Box, Columns, Container, Heading } from "react-bulma-components";
 import IntroCard from "../components/IntroCard/introCard";
-import TagGroup from "../components/TagGroup/TagGroup";
 import { useAppContext } from "../context/state";
 import Languages from "../components/Languages/Languages";
 import Experience from "../components/Experience/Experience";
 import Training from "../components/Training/Training";
 import Education from "../components/Education/Education";
-import stylesUtils from "../styles/utils.module.scss"
-import { CircularProgressbar } from 'react-circular-progressbar';
+import SkillsBadge from "../components/SkillsBadge/SkillsBadge";
 
 export default function Home() {
   const data = useAppContext();
@@ -33,43 +31,27 @@ export default function Home() {
             <Columns>
               <Columns.Column>
                 <Heading renderAs={"h3"}>Technologies</Heading>
-                {data.skills.technologies.map((skill, index)=> {
-                  return (
-                    <div key={index}>
-                    <span style={{ width: 30, height: 30, display:"inline-block" }}>
-                      <CircularProgressbar value={skill.level} text="" strokeWidth={14}/>
-                    </span>{" "}
-                      {skill.name}
-                    </div>)
-                })}
+                <SkillsBadge data={data.skills.technologies} />
               </Columns.Column>
 
               <Columns.Column>
                 <Heading renderAs={"h3"}>Methods</Heading>
-                {data.skills.methods.map((skill, index)=> {
-                  return (
-                    <div key={index}>
-                    <span style={{ width: 30, height: 30, display:"inline-block" }}>
-                      <CircularProgressbar value={skill.level} text="" strokeWidth={14}/>
-                    </span>{" "}
-                      {skill.name}
-                    </div>)
-                })}
+                <SkillsBadge data={data.skills.methods} />
               </Columns.Column>
             </Columns>
 
+
+
             <Heading renderAs={"h3"}>Tools & Platforms</Heading>
-            <div className={styles.parent}>
-              {data.skills["tools & platforms"].map((skill, index)=> {
-                return (
-                  <div key={index}>
-                    <span style={{ width: 30, height: 30, display:"inline-block" }}>
-                      <CircularProgressbar value={skill.level} text="" strokeWidth={14} />
-                    </span> {" "}
-                    {skill.name}
-                  </div>)
-              })}
-            </div>
+            <Columns>
+              <Columns.Column>
+                <SkillsBadge data={data.skills["tools & platforms"].slice(0, Math.ceil(data.skills["tools & platforms"].length / 2) )} />
+              </Columns.Column>
+
+              <Columns.Column>
+                <SkillsBadge data={data.skills["tools & platforms"].slice(-Math.ceil(data.skills["tools & platforms"].length / 2) )} />
+              </Columns.Column>
+            </Columns>
 
           </Box>
           <Experience data={data.activities} />
