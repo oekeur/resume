@@ -15,7 +15,14 @@
       "LinkedIn": "https://www.linkedin.com/in/oscarkeur/",
       "GitHub": "https://github.com/oekeur",
       "Instagram": "https://www.instagram.com/oekeu/"
-    }
+    },
+    "interests": [
+      "Cooking",
+      "Fermentation",
+      "UI/UX",
+      "Hiking",
+      "Design"
+    ]
   },
   "activities": {
     "work": [
@@ -24,7 +31,7 @@
         "position": "Senior Developer",
         "website": "http://www.greenpeace.org/nl",
         "date": "2018-present",
-        "summary": "At Greenpeace Netherlands, I am responsible for the website, both in technical terms, as on a strategic level. My job consists of identifying bottlenecks and areas of improvement, coming up with ideas to solve them, test those, and finally implement and support them.",
+        "summary": "At Greenpeace Netherlands, I am responsible for the website, both in technical terms, as on a tactical level. My job consists of identifying bottlenecks and areas of improvement, coming up with ideas to solve them, test those, and finally implement and support them.",
         "highlights": ["Implementing new donation and lead generation forms",
           "Developing tools for e-activism",
           "Identifying UI/UX improvements",
@@ -136,13 +143,102 @@
 
   ]
   },
-  "skills": [
-    {
-      "name": "Web Development",
-      "level": "",
-      "keywords": ["HTML", "CSS", "PHP", "Javascript","Python"]
-    }
-  ],
+  "skills": {
+    "technologies": [
+      {
+        "name": "PHP",
+        "level": 90
+      },
+      {
+        "name": "HTML5",
+        "level": 90
+      },
+      {
+        "name": "Javascript",
+        "level": 75
+      },
+      {
+        "name": "CSS3",
+        "level": 75
+      },
+      {
+        "name": "Python",
+        "level": 25
+      }
+    ],
+    "tools & platforms": [
+      {
+        "name": "WordPress",
+        "level": 90
+      },
+      {
+        "name": "Git",
+        "level": 90
+      },
+      {
+        "name": "React",
+        "level": 75
+      },
+      {
+        "name": "Google Marketing Platform",
+        "level": 75
+      },
+      {
+        "name": "Smartsheet",
+        "level": 75
+      },
+      {
+        "name": "Webpack",
+        "level": 75
+      },
+      {
+        "name": "Docker",
+        "level": 50
+      },
+      {
+        "name": "Codeception",
+        "level": 50
+      },
+      {
+        "name": "CircleCI",
+        "level": 25
+      },
+      {
+        "name": "Puppeteer",
+        "level": 25
+      },
+      {
+        "name": "SonarCloud",
+        "level": 25
+      },
+      {
+        "name": "Jira",
+        "level": 25
+      },
+      {
+        "name": "Jest",
+        "level": 25
+      },
+      {
+        "name": "NewRelic",
+        "level": 25
+      },
+      {
+        "name": "Sentry",
+        "level": 25
+      },
+      {
+        "name": "Docker Compose",
+        "level": 25
+      }
+    ],
+    "techniques?": [
+      {
+        "language": "Dutch",
+        "level": "nl"
+      }
+    ]
+  },
   "languages": [
     {
       "language": "Dutch",
@@ -166,13 +262,6 @@
     }
   ],
   "interests": {
-    "personal": [
-        "Cooking",
-        "Fermentation",
-        "UI/UX",
-        "Hiking",
-        "Design"
-    ],
     "professional": [
       "WordPress",
       "Git",

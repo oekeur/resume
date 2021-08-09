@@ -10,6 +10,8 @@ import Languages from "../components/Languages/Languages";
 import Experience from "../components/Experience/Experience";
 import Training from "../components/Training/Training";
 import Education from "../components/Education/Education";
+import stylesUtils from "../styles/utils.module.scss"
+import ProgressRing from "../components/partials/ProgressRing/ProgressRing";
 
 export default function Home() {
   const data = useAppContext();
@@ -26,9 +28,37 @@ export default function Home() {
       <Container className={styles.container}>
         <main className={styles.main}>
           <IntroCard />
-          <Box>
+          <Box className={layout.fullwidth}>
             <Heading renderAs={"h2"}>Skills</Heading>
-            <TagGroup data={data.interests.professional} />
+            <Heading renderAs={"h3"}>Technologies</Heading>
+            <ul className={stylesUtils.resetList}>
+              {data.skills.technologies.map((skill, index)=> {
+                return (
+                  <li key={index}>
+                    {skill.name}
+                    <ProgressRing
+                    radius={ 10 }
+                    stroke={ 2 }
+                    progress= {skill.level }
+                    />
+                </li>)
+              })}
+            </ul>
+            <Heading renderAs={"h3"}>Tools&Platforms</Heading>
+            <ul className={stylesUtils.resetList}>
+              {data.skills["tools & platforms"].map((skill, index)=> {
+                return (
+                  <li key={index}>
+                    {skill.name}
+                    <ProgressRing
+                      radius={ 10 }
+                      stroke={ 2 }
+                      progress= {skill.level }
+                    />
+                  </li>)
+              })}
+            </ul>
+
           </Box>
           <Experience data={data.activities} />
 

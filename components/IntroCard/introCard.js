@@ -56,7 +56,7 @@ const IntroCard = (props) => {
           <Heading subtitle renderAs={"h3"}>
             Personal interests
           </Heading>
-          <TagGroup data={data.interests.personal} />
+          <TagGroup data={data.basics.interests} />
         </Media.Item>
       </Media>
     </Box>
