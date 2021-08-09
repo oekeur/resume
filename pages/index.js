@@ -11,7 +11,7 @@ import Experience from "../components/Experience/Experience";
 import Training from "../components/Training/Training";
 import Education from "../components/Education/Education";
 import stylesUtils from "../styles/utils.module.scss"
-import ProgressRing from "../components/partials/ProgressRing/ProgressRing";
+import { CircularProgressbar } from 'react-circular-progressbar';
 
 export default function Home() {
   const data = useAppContext();
@@ -36,11 +36,10 @@ export default function Home() {
                 return (
                   <li key={index}>
                     {skill.name}
-                    <ProgressRing
-                    radius={ 10 }
-                    stroke={ 2 }
-                    progress= {skill.level }
-                    />
+                    <span style={{ width: 30, height: 30, display:"inline-block" }}>
+                      <CircularProgressbar value={skill.level} text="" strokeWidth={14}/>
+                    </span>
+                </div>)
                 </li>)
               })}
             </ul>
@@ -50,11 +49,10 @@ export default function Home() {
                 return (
                   <li key={index}>
                     {skill.name}
-                    <ProgressRing
-                      radius={ 10 }
-                      stroke={ 2 }
-                      progress= {skill.level }
-                    />
+                    <span style={{ width: 30, height: 30, display:"inline-block" }}>
+                      <CircularProgressbar value={skill.level} text="" strokeWidth={14} />
+                    </span>
+                  </div>)
                   </li>)
               })}
             </ul>
