@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import layout from "../styles/layout.module.scss";
 import NavBar from "../components/NavBar/NavBar";
-import { Box, Container, Heading } from "react-bulma-components";
+import { Box, Columns, Container, Heading } from "react-bulma-components";
 import IntroCard from "../components/IntroCard/introCard";
 import TagGroup from "../components/TagGroup/TagGroup";
 import { useAppContext } from "../context/state";
@@ -30,17 +30,35 @@ export default function Home() {
           <IntroCard />
           <Box className={layout.fullwidth}>
             <Heading renderAs={"h2"}>Skills</Heading>
-            <Heading renderAs={"h3"}>Technologies</Heading>
-              {data.skills.technologies.map((skill, index)=> {
-                return (
-                  <div key={index}>
+            <Columns>
+              <Columns.Column>
+                <Heading renderAs={"h3"}>Technologies</Heading>
+                {data.skills.technologies.map((skill, index)=> {
+                  return (
+                    <div key={index}>
                     <span style={{ width: 30, height: 30, display:"inline-block" }}>
                       <CircularProgressbar value={skill.level} text="" strokeWidth={14}/>
                     </span>{" "}
-                    {skill.name}
-                </div>)
-              })}
-            <Heading renderAs={"h3"}>Tools&Platforms</Heading>
+                      {skill.name}
+                    </div>)
+                })}
+              </Columns.Column>
+
+              <Columns.Column>
+                <Heading renderAs={"h3"}>Methods</Heading>
+                {data.skills.methods.map((skill, index)=> {
+                  return (
+                    <div key={index}>
+                    <span style={{ width: 30, height: 30, display:"inline-block" }}>
+                      <CircularProgressbar value={skill.level} text="" strokeWidth={14}/>
+                    </span>{" "}
+                      {skill.name}
+                    </div>)
+                })}
+              </Columns.Column>
+            </Columns>
+
+            <Heading renderAs={"h3"}>Tools & Platforms</Heading>
             <div className={styles.parent}>
               {data.skills["tools & platforms"].map((skill, index)=> {
                 return (

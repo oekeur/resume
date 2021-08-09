@@ -166,6 +166,16 @@
         "level": 20
       }
     ],
+    "methods": [
+      {
+        "name": "Big picture thinking",
+        "level": 90
+      },
+      {
+        "name": "Data analysis",
+        "level": 90
+      }
+    ],
     "tools & platforms": [
       {
         "name": "WordPress",
@@ -213,22 +223,6 @@
       },
       {
         "name": "Jira",
-        "level": 25
-      },
-      {
-        "name": "Jest",
-        "level": 25
-      },
-      {
-        "name": "NewRelic",
-        "level": 25
-      },
-      {
-        "name": "Sentry",
-        "level": 25
-      },
-      {
-        "name": "Docker Compose",
         "level": 25
       }
     ],
