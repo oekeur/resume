@@ -29,7 +29,7 @@ const Professional = ({ work }) => {
 const Results = ({ highlights }) => {
   return (
     <Fragment>
-      <Heading subtitle renderAs={"h3"} mb={"1"} mt={"3"}>
+      <Heading subtitle renderAs={"h4"} className={stylesUtils.noMb +" "+stylesUtils["mt-1"]} >
         Key results:
       </Heading>
       <ul className={stylesUtils.resetList}>
