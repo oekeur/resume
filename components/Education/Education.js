@@ -9,15 +9,15 @@ const Education = ({ data }) => {
     <Box className={layout.fullwidth}>
       <Heading renderAs={"h2"}>Education</Heading>
       <Level mb="0">
-        <Level.Item className={layout.mrAuto}>
+        <Level.Side className={layout.mrAuto} align={"left"}>
           {studyType} {area}
-        </Level.Item>
-        <Level.Item className={layout.mlAuto}>
+        </Level.Side>
+        <Level.Side className={layout.mlAuto}  align={"right"}>
           {institution}
           <Element renderAs={"span"} italic>
             ({date})
           </Element>
-        </Level.Item>
+        </Level.Side>
       </Level>
       <ul className={stylesUtils.resetList}>
         {courses.map((course, index) => {

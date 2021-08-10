@@ -6,10 +6,10 @@ const List = ({ data }) => {
   return data.map((elem, index) => {
     return (
       <Level className={stylesUtils.noMb} key={index}>
-        <Level.Item className={layout.mrAuto}>{elem.name}</Level.Item>
-        <Level.Item className={layout.mlAuto} italic>
+        <Level.Side className={layout.mrAuto} align={"left"}>{elem.name}</Level.Side>
+        <Level.Side className={layout.mlAuto} italic align={"right"}>
           {elem.date}
-        </Level.Item>
+        </Level.Side>
       </Level>
     );
   });

@@ -35,10 +35,10 @@ const IntroCard = (props) => {
         </Media.Item>
         <Media.Item>
           <Level>
-            <Level.Side className={stylesLayout.mrAuto}>
+            <Level.Side className={stylesLayout.mrAuto} align={"left"}>
               <Heading>Oscar Keur</Heading>
             </Level.Side>
-            <Level.Side className={stylesLayout.mlAuto +" "+styles.posRelative}>
+            <Level.Side className={stylesLayout.mlAuto +" "+styles.posRelative} align={"right"}>
               <Icon m={1}>
                 <FontAwesomeIcon icon={faMapMarkerAlt} />
               </Icon>

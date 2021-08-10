@@ -10,13 +10,13 @@ const Professional = ({ work }) => {
     return (
       <Fragment key={index}>
         <Level className={stylesLayout.justifyCenter +" "+  stylesUtils.noMb}>
-          <Level.Item className={stylesLayout.mrAuto} textWeight={"semibold"} >
+          <Level.Side className={stylesLayout.mrAuto} textWeight={"semibold"} align={"left"} >
             {elem.position}
-          </Level.Item>
+          </Level.Side>
           <Level.Item className={stylesLayout.flexOne}>{hasSummary ? elem.company : elem.name}</Level.Item>
-          <Level.Item className={stylesLayout.mlAuto} italic>
+          <Level.Side className={stylesLayout.mlAuto} italic align={"right"}>
             {elem.date}
-          </Level.Item>
+          </Level.Side>
         </Level>
         {hasSummary ? <p>{elem.summary}</p> : ""}
         {hasHighLight ? <Results highlights={elem.highlights} /> : ""}
