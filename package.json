@@ -23,6 +23,7 @@
     "bulma-pro": "^0.2.0",
     "flag-icon-css": "^3.5.0",
     "next": "11.0.1",
+    "next-seo": "^4.26.0",
     "prop-types": "^15.7.2",
     "react": "17.0.2",
     "react-bulma-components": "4.0.7",
