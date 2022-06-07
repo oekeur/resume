@@ -4,7 +4,7 @@
     "label": "Programmer",
     "picture": "",
     "website": "http://oscarkeur.dev",
-    "summary": "Experienced Developer with a history of entrepreneurship. Prefers working in the non-profit industry. Skilled in Web development, Project Management, big picture thinking and digital marketing analytics. Strong independent professional with a Bsc focused on Technical policy management from TU Delft, minoring in Software engineering. ",
+    "summary": "Experienced Developer with a history of entrepreneurship. Prefers working in the non-profit industry. Skilled in Web development, Project Management, big picture thinking and digital marketing analytics. Strong independent professional with a BSc focused on Technical policy management from TU Delft, minoring in Software engineering. ",
     "pronouns": "he/him",
     "competences": ["independent", "flexible", "user centric", "venturous", "dependable", "technical"],
     "location": {
@@ -27,26 +27,30 @@
   "activities": {
     "work": [
       {
-        "company": "Greenpeace Netherlands",
-        "position": "Senior Developer",
-        "website": "http://www.greenpeace.org/nl",
-        "date": "2018-present",
-        "summary": "At Greenpeace Netherlands, I am responsible for the website, both in technical terms, as on a tactical level. My job consists of identifying bottlenecks and areas of improvement, coming up with ideas to solve them, test those, and finally implement and support them.",
-        "highlights": ["Implementing new donation and lead generation forms",
-          "Developing tools for e-activism",
-          "Identifying UI/UX improvements",
-          "Overseeing web presence during CRM migration",
-          "Implementing new style guide following identity project",
-          "Increasing style guide use, leading to a more coherent image",
-          "Improving collaboration through coherent request management"
-        ]
-      },
-      {
         "company": "WikkertWebdesign",
         "position": "Founder / Developer",
         "website": "",
         "date": "2015-present",
-        "summary": "For the past 6 years, I developed several products within the context of my own company. These products range from websites to applications for revenue calculation, ticket sales, and subscription management. Amongst others I developed products for: The Dutch Review of Books, DRIFT and Morebeer."
+        "summary": "For the past 7 years, I developed several products as a freelancer. These products range from websites <i>(Bolt/Wordpress/Python)</i> to applications for revenue calculation, ticket sales, and subscription management <i>(Symfony)</i>.",
+        "clients": [
+          "NRC Media",
+          "KIT Royal Tropical Institute",
+          "Greenpeace",
+          "The Dutch Review of Books"
+        ]
+      },
+      {
+        "company": "Greenpeace Netherlands",
+        "position": "Senior Developer",
+        "website": "http://www.greenpeace.org/nl",
+        "date": "2018-2021",
+        "summary": "At Greenpeace Netherlands, I was responsible for the website, both in technical terms, as on a tactical level. One of my main priorities was developing new Gutenberg blocks for our editors for them to build their own interactive content. Furthermore I identified bottlenecks and areas of improvement, coming up with ideas to solve them, test those, and finally implement and support them.",
+        "highlights": [
+          "Implementation Gutenberg Editor",
+          "Implementing new donation and lead generation forms",
+          "Developing tools for e-activism",
+          "Optimize digital marketing tools"
+        ]
       }
     ],
     "additional": [
@@ -78,16 +82,6 @@
     ],
     "extracurricular": [
       {
-        "position": "Member of works council",
-        "name": "Greenpeace Netherlands",
-        "date":"2019-present"
-      },
-      {
-        "position": "GDPR Officer",
-        "name": "Greenpeace Netherlands",
-        "date":"2021-present"
-      },
-      {
         "position": "President",
         "name": "Foundation Wolpop",
         "date":"2015-present"
@@ -96,6 +90,16 @@
         "position": "Polling station president ",
         "name": "Dutch Elections",
         "date":"2014-present"
+      },
+      {
+        "position": "Member of works council",
+        "name": "Greenpeace Netherlands",
+        "date":"2019-2021"
+      },
+      {
+        "position": "GDPR Officer",
+        "name": "Greenpeace Netherlands",
+        "date":"2021-2021"
       },
       {
         "position": "Treasurer",
@@ -122,7 +126,7 @@
     "training": [
     {
       "name": "Future Leadership Programme",
-      "date": "internal, 2020-2021"
+      "date": "2020-2021"
     },
     {
       "name": "SymfonyCon Amsterdam pre-conference workshop days",
@@ -130,11 +134,11 @@
     },
     {
       "name": "Google Analytics Masterclass",
-      "date": "internal, 2019"
+      "date": "2019"
     },
     {
       "name": "Campaign Essentials",
-      "date": "internal, 2019"
+      "date": "2019"
     },
     {
       "name": "Emergency Response Officer",
@@ -150,7 +154,7 @@
         "level": 90
       },
       {
-        "name": "Javascript",
+        "name": "Javascript ES6",
         "level": 80
       },
       {
@@ -163,7 +167,7 @@
       },
       {
         "name": "Python",
-        "level": 20
+        "level": 25
       }
     ],
     "methods": [
@@ -185,7 +189,7 @@
       },
       {
         "name": "Creative thinking",
-        "level": 60
+        "level": 70
       }
     ],
     "tools & platforms": [
@@ -194,19 +198,20 @@
         "level": 90
       },
       {
-        "name": "Git",
+        "name": "Gutenberg",
         "level": 85
       },
+
       {
-        "name": "Google Marketing Platform",
+        "name": "React",
         "level": 80
       },
       {
-        "name": "React",
-        "level": 75
+        "name": "Git",
+        "level": 80
       },
       {
-        "name": "Smartsheet",
+        "name": "Google Marketing Platform",
         "level": 75
       },
       {
@@ -214,7 +219,15 @@
         "level": 75
       },
       {
-        "name": "Docker",
+        "name": "Docker-compose",
+        "level": 60
+      },
+      {
+        "name": "Symfony",
+        "level": 60
+      },
+      {
+        "name": "NextJS",
         "level": 50
       },
       {
@@ -236,12 +249,6 @@
       {
         "name": "Jira",
         "level": 25
-      }
-    ],
-    "techniques?": [
-      {
-        "language": "Dutch",
-        "level": "nl"
       }
     ]
   },
@@ -266,23 +273,5 @@
       "countryCode": "fr",
       "fluency": "Basic (A1)"
     }
-  ],
-  "interests": {
-    "professional": [
-      "WordPress",
-      "Git",
-      "React",
-      "Webpack",
-      "Codeception",
-      "Smartsheet",
-      "Docker",
-      "CircleCI",
-      "Puppeteer",
-      "SonarCloud",
-      "Jira",
-      "Jest",
-      "NewRelic",
-      "Sentry",
-      "Docker Compose"]
-  }
+  ]
 }
