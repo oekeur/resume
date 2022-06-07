@@ -29,7 +29,7 @@ const IntroCard = (props) => {
             layout="intrinsic"
             placeholder="blur"
           />
-          <span title="Pronouns" className="badge is-dark">
+          <span title="Pronouns" className={`badge is-dark ` + styles.badgeRepositionLeft}>
             he / him
           </span>
         </Media.Item>
@@ -43,7 +43,7 @@ const IntroCard = (props) => {
                 <FontAwesomeIcon icon={faMapMarkerAlt} />
               </Icon>
               Amsterdam, Netherlands
-              <span title="remote" className={`badge is-dark ` + styles.badgeReposition}>
+              <span title="remote" className={`badge is-dark ` + styles.badgeRepositionRight}>
                 + Remote
               </span>
             </Level.Side>

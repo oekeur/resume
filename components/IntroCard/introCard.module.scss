@@ -2,6 +2,9 @@
   position: relative;
 }
 
-.badgeReposition{
-  transform: translate(0%, 150%);
+.badgeRepositionRight{
+  transform: translate(0%, 110%);
+}
+.badgeRepositionLeft{
+  transform: translate(25%, -25%);
 }

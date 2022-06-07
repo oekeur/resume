@@ -14,7 +14,7 @@ const Education = ({ data }) => {
         </Level.Side>
         <Level.Side className={layout.mlAuto}  align={"right"}>
           {institution}
-          <Element renderAs={"span"} italic>
+          <Element renderAs={"span"} italic style={{marginLeft: "4px"}}>
             ({date})
           </Element>
         </Level.Side>

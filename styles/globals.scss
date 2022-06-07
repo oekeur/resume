@@ -1,4 +1,6 @@
 /*@import "~bulma/css/bulma.min.css";*/
+$badge-height: 16px;
+$badge-font-size: 1rem;
 @import "~bulma-pro/css/bulma.css";
 @import "~@creativebulma/bulma-badge/src/docs/static/css/bulma-badge.css";
 @import "../node_modules/flag-icon-css/css/flag-icon.css";
@@ -19,4 +21,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+span.badge{
+    font-size: 1rem;
+    height: 20px;
+    line-height: 11px;
+    padding: 0.1rem 0.25rem;
 }

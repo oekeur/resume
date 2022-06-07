@@ -1,12 +1,14 @@
 import { Fragment } from "react";
-import { Box, Heading, Level } from "react-bulma-components";
+import { Box, Columns, Heading, Level } from "react-bulma-components";
 import stylesLayout from "../../styles/layout.module.scss";
 import stylesUtils from "../../styles/utils.module.scss";
+import ReactHtmlParser from 'react-html-parser';
 
 const Professional = ({ work }) => {
   return work.map((elem, index) => {
     const hasHighLight = elem.highlights !== undefined;
     const hasSummary = elem.summary !== undefined;
+    const hasClients = elem.clients !== undefined;
     return (
       <Fragment key={index}>
         <Level className={stylesLayout.justifyCenter +" "+  stylesUtils.noMb}>
@@ -18,24 +20,34 @@ const Professional = ({ work }) => {
             {elem.date}
           </Level.Side>
         </Level>
-        {hasSummary ? <p>{elem.summary}</p> : ""}
-        {hasHighLight ? <Results highlights={elem.highlights} /> : ""}
+        {hasSummary ? <p>{ ReactHtmlParser(elem.summary)}</p> : ""}
+        {hasHighLight ? <Results highlights={elem.highlights} title={"Key results:"} /> : ""}
+        {hasClients ? <Results highlights={elem.clients} title={"Clients <i>(amongst others)</i>:"} /> : ""}
         {hasSummary ? <hr /> : ""}
       </Fragment>
     );
   });
 };
 
-const Results = ({ highlights }) => {
+const Results = ({ highlights, title }) => {
   return (
     <Fragment>
-      <Heading subtitle renderAs={"h4"} className={stylesUtils.noMb +" "+stylesUtils["mt-1"]} >
-        Key results:
+      <Heading subtitle renderAs={"h4"} className={stylesUtils.noMb +" "+stylesUtils["mt-1"]} textSize={"1rem"} >
+        { ReactHtmlParser(title) }
       </Heading>
       <ul className={stylesUtils.resetList}>
-        {highlights.map((highlight, index) => {
+        <Columns>
+          <Columns.Column>
+        {highlights.slice(0, Math.ceil(highlights.length / 2) ).map((highlight, index) => {
           return <li key={index}>{highlight}</li>;
         })}
+            </Columns.Column>
+          <Columns.Column>
+        {highlights.slice(-Math.ceil(highlights.length / 2) ).map((highlight, index) => {
+          return <li key={index}>{highlight}</li>;
+        })}
+            </Columns.Column>
+          </Columns>
       </ul>
     </Fragment>
   );
